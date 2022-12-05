@@ -1,0 +1,89 @@
+$green: rgb(32, 223, 32);
+$red: rgb(231, 95, 95);
+$yellow: rgb(255, 255, 0);
+
+.title-cails > td {
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.del-this-item > td {
+  border-color: $red;
+}
+
+.del-this-item {
+	.student-table__action-img {
+		cursor: default;
+	}
+}
+
+.update-this-item-start > td {
+  border-color: $yellow;
+}
+
+.update-this-item-end > td {
+  border-color: $green;
+}
+
+.hidden {
+	display: none;
+}
+
+.w-20 {
+	width: 15%;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+//===================================================================================================================================
+ 
+// filter-form__head-field
+// filter-form__label 
+.sort-unit {
+	// display: none;
+	position: relative;
+	opacity: 0;
+	width: 12px;
+	height: 12px;
+	> span {
+		position: absolute;
+		width: 2px;
+		height: 12px;
+		background-color: blue;
+	}
+	> span:nth-child(1) {
+		top: 0;
+		left: 3px;
+	}
+	> span:nth-child(2) {
+		top: 0;
+		left: 0;
+		transform: rotate(45deg);
+		height: 8px;
+	}
+	> span:nth-child(3) {
+		top: 0;
+		left: 6px;
+		transform: rotate(-45deg);
+		height: 8px;
+	}
+}
+
+.sort-up {
+	.sort-unit {
+		opacity: 1;
+	}
+}
+
+.sort-down {
+	.sort-unit {
+		opacity: 1;
+		transform: rotate(180deg);
+	}
+}
+
+.sortable {
+	cursor: pointer;
+}

@@ -1,0 +1,82 @@
+.filter-form {
+  padding: 20px;
+  border: 1px dashed #000;
+  width: 600px;
+  margin: 10px auto;
+  /* .filter-form__row */
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  /* .filter-form__left */
+  &__left {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+  /* .filter-form__block */
+  &__block {
+    margin: 10px 0 0;
+  }
+  /* .filter-form__label */
+  &__label {}
+  /* .filter-form__input */
+  &__input {
+    display: block;
+    border: 1px solid #000;
+    height: 25px;
+    padding: 0 5px;
+    margin: 5px 20px 0 0;
+  }
+  /* .filter-form__rigth */
+  &__rigth {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+  /* .filter-form__row-min */
+  &__row-min {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /* .filter-form__text */
+  &__text {
+    flex: 0 0 100%;
+    display: block;
+    margin: 10px 0 0;
+  }
+  /* .filter-form__block-min */
+  &__block-min {
+    flex: 0 0 90px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    margin: 5px 0 0 0;
+    > label {
+      font-size: 14px;
+      margin: 0 5px 0 0;
+    }
+    > input {
+      width: 50px;
+      margin: 0;
+    }
+  }
+  /* .filter-form__selcet */
+  &__selcet {
+    border: 1px solid #000;
+    margin: 10px 0 0;
+    margin: 10px 0 0 5px;
+  }
+  /* .filter-form__btn */
+  &__btn {
+    border: 1px dashed #000;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0 0 auto;
+    &:hover, &:focus {
+      color: rgb(32, 223, 32);
+      border: 1px solid rgb(32, 223, 32);
+    }
+  }
+}

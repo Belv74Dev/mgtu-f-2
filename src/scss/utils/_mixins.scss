@@ -1,0 +1,38 @@
+$green: rgb(32, 223, 32);
+$red: rgb(231, 95, 95);
+$yellow: rgb(255, 255, 0);
+
+.title-cails > td {
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.del-this-item > td {
+  border-color: $red;
+}
+
+.del-this-item {
+	.student-table__action-img {
+		cursor: default;
+	}
+}
+
+.update-this-item-start > td {
+  border-color: $yellow;
+}
+
+.update-this-item-end > td {
+  border-color: $green;
+}
+
+.hidden {
+	display: none;
+}
+
+.w-20 {
+	width: 15%;
+}
+
+.w-10 {
+	width: 10%;
+}
